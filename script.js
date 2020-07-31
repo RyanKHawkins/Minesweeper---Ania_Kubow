@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //create Board
     function createBoard () {
         //get shuffled game array with random bombs
-        const bombsArray = Array(bombAmount).fill("bomb")
+        const bombsArray = Array(bombAmount).fill("bomb");
         const emptyArray = Array(width * width - bombAmount).fill("valid");
         const gameArray = emptyArray.concat(bombsArray);
         const shuffledArray = gameArray.sort(() => Math.random() - 0.5);
